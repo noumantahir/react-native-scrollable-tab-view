@@ -1,8 +1,8 @@
-const React = require('react');
-const ReactNative = require('react-native');
-const createReactClass = require('create-react-class');
-const PropTypes = require('prop-types');
-const {
+import React from 'react';
+
+import createReactClass from 'create-react-class';
+import PropTypes from 'prop-types';
+import {
   Dimensions,
   View,
   Animated,
@@ -10,14 +10,14 @@ const {
   StyleSheet,
   InteractionManager,
   ViewPropTypes
-} = ReactNative;
+} from 'reat-native';
 
-const TimerMixin = require('react-timer-mixin');
+import TimerMixin from 'react-timer-mixin';
 
-const PagerView = require('react-native-pager-view');
-const SceneComponent = require('./SceneComponent');
-const DefaultTabBar = require('./DefaultTabBar');
-const ScrollableTabBar = require('./ScrollableTabBar');
+import PagerView from 'react-native-pager-view';
+import SceneComponent from './SceneComponent';
+import DefaultTabBar from './DefaultTabBar';
+import ScrollableTabBar from './ScrollableTabBar';
 
 const AnimatedViewPagerAndroid = Platform.OS === 'android' ?
   Animated.createAnimatedComponent(PagerView) :
