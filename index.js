@@ -10,7 +10,7 @@ import {
   StyleSheet,
   InteractionManager,
   ViewPropTypes
-} from 'reat-native';
+} from 'react-native';
 
 import TimerMixin from 'react-timer-mixin';
 
